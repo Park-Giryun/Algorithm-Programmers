@@ -12,7 +12,7 @@ def solution(scores):
             grade.append((sum(s) - my) / (len(s) - 1))
         else:
             grade.append(sum(s) / len(s))
-    print(grade)
+
     for x in grade:
         if int(x) >= 90:
             answer += 'A'
