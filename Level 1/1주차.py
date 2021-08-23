@@ -1,11 +1,7 @@
+# 0823
+# 부족한 금액 계산하기
 def solution(price, money, count):
-    res = 0
-    for i in range(1,count+1):
-        res += price*i
-    if res >= money:
-        answer = res -money
-    else:
-        answer = 0
-
-
-    return answer
+    answer = 0
+    for i in range(count):
+        answer += price * (i+1)
+    return answer - money if answer >= money else 0

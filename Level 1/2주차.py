@@ -1,3 +1,5 @@
+# 0823
+# 상호 평가
 def solution(scores):
     answer = ''
     grade = []
