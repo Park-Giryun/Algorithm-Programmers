@@ -1,5 +1,6 @@
 # 0825
 # 타겟 넘버
+# idea: dfs 사용
 def solution(numbers, target):
     n = len(numbers)
     answer = 0
