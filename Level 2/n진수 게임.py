@@ -1,5 +1,5 @@
 # 1020
-# N진수 게임
+# n진수 게임
 # idea: 구현
 def convert(n, base):
     arr = "0123456789ABCDEF"
