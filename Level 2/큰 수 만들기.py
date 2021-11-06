@@ -6,7 +6,7 @@ from itertools import combinations
 def solution(number, k):
     return sorted(["".join(cb) for cb in combinations(number, len(number)-k)])[-1]
 
-# idea: 스택
+# idea: 스택큐
 def solution(number, k):
     answer = []  # Stack
 
