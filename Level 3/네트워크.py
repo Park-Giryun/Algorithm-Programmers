@@ -13,12 +13,10 @@ def solution(n, computers):
             for y in range(n):
                 if y != x and computers[x][y] == 1 and not visited[y]:
                     q.append(y)
-
     for i in range(n):
         if not visited[i]:
             bfs(i)
             answer += 1
-
     return answer
 
 print(solution(3, [[1, 1, 0], [1, 1, 0], [0, 0, 1]]))
