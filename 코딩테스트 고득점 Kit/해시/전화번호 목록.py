@@ -1,12 +1,10 @@
 # set, dict에서 element 찾는 속도는 list보다 훨~씬 더 빠르다
 def solution(phone_book):
-    pb = {}
+    pb = set(phone_book)
     for number in phone_book:
-        pb[number] = 1
-    for number in phone_book:
-        tmp = ""
-        for n in number:
-            tmp += n
+        tmp = ''
+        for nb in number:
+            tmp += nb
             if tmp in pb and tmp != number:
                 return False
     return True

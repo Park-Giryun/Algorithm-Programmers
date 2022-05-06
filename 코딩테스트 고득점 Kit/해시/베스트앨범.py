@@ -5,7 +5,6 @@ def solution(genres, plays):
     answer = []
     cnt = defaultdict(int)
     song = defaultdict(list)
-
     for id, (g, p) in enumerate(zip(genres, plays)):
         cnt[g] += p
         song[g].append((-p, id))
